@@ -1,0 +1,39 @@
+.sidebar {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 11rem;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  text-align: center;
+  border-right: 2px solid #3d3d3d;
+  .sidebar-item {
+    padding: 0.6rem;
+    opacity: 0.7;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border-radius: 3rem;
+    span {
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+    }
+    &:hover {
+      opacity: 1;
+      background-color: #3d3d3d;
+    }
+  }
+  .btn-selected {
+    background-color: #fc1503;
+    opacity: 1;
+  }
+  .copyright {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
