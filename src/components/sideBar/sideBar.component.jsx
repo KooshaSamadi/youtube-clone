@@ -1,10 +1,11 @@
+import { Stack } from "@mui/material";
 import React, { useState } from "react";
 import { categories } from "../../utils/constants";
 import "./sideBar.style.scss";
 const SideBar = () => {
   const [btnSelected, setBtnSelected] = useState("New");
   return (
-    <div className="sidebar">
+    <Stack className="sidebar">
       {categories.map((category, index) => (
         <button
           className={`sidebar-item ${
@@ -18,7 +19,7 @@ const SideBar = () => {
         </button>
       ))}
       <p className="copyright">Koosha Samadi</p>
-    </div>
+    </Stack>
   );
 };
 

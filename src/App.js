@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./app.scss";
 
 import Navbar from "./components/navbar/navbar.component.jsx";
-import Feed from "./components/feed/feed.component.jsx";
+import Feed from "./Pages/feed/feed.component.jsx";
 import VideoDetail from "./Pages/videoDetail/videoDetail.component";
 import ChannelDetail from "./Pages/channelDetail/channelDetail.component.jsx";
 import SearchFeed from "./components/searchFeed/searchFeed.component";
