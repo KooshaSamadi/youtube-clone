@@ -2,8 +2,8 @@ import { Stack } from "@mui/material";
 import React, { useState } from "react";
 import { categories } from "../../utils/constants";
 import "./sideBar.style.scss";
-const SideBar = () => {
-  const [btnSelected, setBtnSelected] = useState("New");
+const SideBar = ({ btnSelected, setBtnSelected }) => {
+
   return (
     <Stack className="sidebar">
       {categories.map((category, index) => (
