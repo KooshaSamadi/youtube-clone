@@ -1,13 +1,6 @@
-.sidebar {
+.sidebar-container {
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  width: 11rem;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: auto;
-  text-align: center;
-  border-right: 2px solid #3d3d3d;
+
   .sidebar-item {
     padding: 0.6rem;
     opacity: 0.7;

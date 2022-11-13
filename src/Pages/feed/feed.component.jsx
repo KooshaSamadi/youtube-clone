@@ -14,16 +14,16 @@ const Feed = () => {
 
   if (videosError) return;
   return (
-    <div className="feed">
+    <div className="feed container-fluid">
       {videosIsLoading ? (
         <div className="spinner_container">
           <Spinner />
         </div>
       ) : (
-        <>
+        <div className="row">
           <SideBar btnSelected={btnSelected} setBtnSelected={setBtnSelected} />
           <VideoSegment videosData={videosData} btnSelected={btnSelected} />
-        </>
+        </div>
       )}
     </div>
   );

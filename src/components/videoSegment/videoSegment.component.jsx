@@ -1,18 +1,21 @@
 import React from "react";
-import ChannelCard from "../channelCard/channelCard.component";
 import VideoCard from "../videoCard/videoCard.component";
 import "./videoSegment.style.scss";
 const VideoSegment = ({ videosData, btnSelected }) => {
   const { items } = videosData;
-  console.log(items);
+
   return (
-    <div className="video_segment">
-      {items.map((item, index) => (
-        <div className="video_segment__item" key={index}>
-          {item.id.videoId && <VideoCard videoDetail={item} />}
-          {item.id.channelId && <ChannelCard channelDetail={item} />}
-        </div>
-      ))}
+    <div className="video_segment col-10">
+      <div className="row">
+        {items.map((item, index) => (
+          <div
+            className="video_segment__item col-xs-12 col-sm-6 col-lg-4"
+            key={index}
+          >
+            <VideoCard videoDetail={item} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

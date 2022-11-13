@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&display=swap");
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
 }
 
 a {
@@ -16,7 +18,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: grey;
   border-radius: 10px;
   height: 200px;
 }

@@ -1,0 +1,18 @@
+.videoDetail_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e !important;
+  color: white !important;
+  margin: 5px;
+  img {
+    width: 70%;
+    height: 70%;
+  }
+  .video_Detail_title {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}

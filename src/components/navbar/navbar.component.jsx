@@ -6,7 +6,7 @@ import "./navbar.style.scss";
 import SearchBar from "../searchBar/searchBar.component";
 const Navbar = () => {
   return (
-    <Stack className="navbar" direction="row" alignItems="center" p={2}>
+    <Stack className="navbar_container" direction="row" alignItems="center" p={2}>
       <Link to="/">
         <img src={Icon} alt="Youtube Icon" />
       </Link>

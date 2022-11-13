@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import { categories } from "../../utils/constants";
 import "./sideBar.style.scss";
 const SideBar = ({ btnSelected, setBtnSelected }) => {
-
   return (
-    <Stack className="sidebar">
+    <Stack className="sidebar-container col-2">
       {categories.map((category, index) => (
         <button
           className={`sidebar-item ${
