@@ -4,9 +4,11 @@ import React from "react";
 
 const Spinner = () => {
   return (
-    <div className="lds-ripple">
-      <div></div>
-      <div></div>
+    <div className="spinner_container">
+      <div className="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };

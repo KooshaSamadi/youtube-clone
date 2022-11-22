@@ -36,3 +36,13 @@ export const categories = [
 export const demoVideoTitle = "Build and Deploy Youtube Clone ";
 export const demoProfilePicture =
   "http://dergipark.org.tr/assets/app/images/buddy_sample.png";
+
+export const LinearGradient = [
+  "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
+  "linear-gradient(to left, #99a3b1, #758d96, #597775, #485f51, #3f4630)",
+  "linear-gradient(to right top, #505762, #606776, #71788b, #8388a0, #9699b5)",
+  "linear-gradient(to right top, #405824, #5b7444, #789266, #96b089, #b5cfad)",
+  "linear-gradient(to right top, #6f898c, #4c7470, #2e5e50, #1b482e, #113207)",
+  "linear-gradient(to left, #327a1d, #7f7622, #a5734b, #ac7b77, #9f8c93)",
+  "radial-gradient(circle, #d9f031, #ffb12a, #ff735d, #e24f89, #934c9f)",
+];

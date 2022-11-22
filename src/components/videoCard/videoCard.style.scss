@@ -6,6 +6,11 @@
   background-color: #1e1e1e !important;
   color: white !important;
   margin: 5px;
+  overflow: hidden;
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 250ms ease-out;
+  }
   img {
     width: 70%;
     height: 70%;
@@ -14,5 +19,15 @@
     font-family: "Inter Tight", sans-serif;
     font-size: 17px;
     font-weight: 700;
+    color: white;
+  }
+  .video_Detail_channelTitle {
+    font-family: "Inter Regular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+    &:hover {
+      color: red;
+    }
   }
 }

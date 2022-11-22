@@ -18,6 +18,34 @@ const searchOption = (btnSelected) => {
     },
   };
 };
+const channelVideos = (channelId) => {
+  return {
+    method: "GET",
+    url: "https://youtube-v31.p.rapidapi.com/search",
+    params: {
+      channelId: channelId,
+      part: "snippet,id",
+      order: "date",
+      maxResults: "50",
+    },
+    headers: {
+      "X-RapidAPI-Key": process.env.REACT_APP_YOUTUBE_API_KEY,
+      "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+    },
+  };
+};
+
+const Channeloptions = (Id) => {
+  return {
+    method: "GET",
+    url: "https://youtube-v31.p.rapidapi.com/channels",
+    params: { part: "snippet,statistics", id: Id },
+    headers: {
+      "X-RapidAPI-Key": process.env.REACT_APP_YOUTUBE_API_KEY,
+      "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+    },
+  };
+};
 
 export const youtubeApi = createApi({
   reducerPath: "youtubeApi",
@@ -25,10 +53,23 @@ export const youtubeApi = createApi({
   endpoints: (builder) => ({
     getSuggestedVideos: builder.query({
       query: (btnSelected) => {
-        console.log(btnSelected);
         return searchOption(btnSelected);
+      },
+    }),
+    getChannelDetails: builder.query({
+      query: (Id) => {
+        return Channeloptions(Id);
+      },
+    }),
+    getchannelVideos: builder.query({
+      query: (channelId) => {
+        return channelVideos(channelId);
       },
     }),
   }),
 });
-export const { useGetSuggestedVideosQuery } = youtubeApi;
+export const {
+  useGetSuggestedVideosQuery,
+  useGetChannelDetailsQuery,
+  useGetchannelVideosQuery,
+} = youtubeApi;
