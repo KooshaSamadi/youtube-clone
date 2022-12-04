@@ -46,7 +46,23 @@ const Channeloptions = (Id) => {
     },
   };
 };
-
+const searchOptions = (searchTerm) => {
+  return {
+    method: "GET",
+    url: "https://youtube-v31.p.rapidapi.com/search",
+    params: {
+      q: { searchTerm },
+      part: "snippet,id",
+      regionCode: "US",
+      maxResults: "50",
+      order: "date",
+    },
+    headers: {
+      "X-RapidAPI-Key": process.env.REACT_APP_YOUTUBE_API_KEY,
+      "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
+    },
+  };
+};
 export const youtubeApi = createApi({
   reducerPath: "youtubeApi",
   baseQuery: fetchBaseQuery({ baseUrl: baseUrl }),
@@ -66,10 +82,16 @@ export const youtubeApi = createApi({
         return channelVideos(channelId);
       },
     }),
+    getSearchResults: builder.query({
+      query: (searchTerm) => {
+        return searchOptions(searchTerm);
+      },
+    }),
   }),
 });
 export const {
   useGetSuggestedVideosQuery,
   useGetChannelDetailsQuery,
   useGetchannelVideosQuery,
+  useGetSearchResultsQuery,
 } = youtubeApi;

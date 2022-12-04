@@ -16,16 +16,16 @@ const VideoCard = ({ videoDetail }) => {
             sx={{ width: 358, height: 180 }}
           />
         </Link>
-        <Link to={`video/${id.videoId}`}>
+        <a href={`video/${id.videoId}`}>
           <CardContent className="video_Detail_title">
             {snippet?.title}
           </CardContent>
-        </Link>
-        <Link to={`channel/${snippet?.channelId}`}>
+        </a>
+        <a href={`channel/${snippet?.channelId}`}>
           <CardContent className="video_Detail_channelTitle">
             {snippet?.channelTitle}
           </CardContent>
-        </Link>
+        </a>
       </Card>
     </>
   );

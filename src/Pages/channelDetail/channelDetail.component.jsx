@@ -34,7 +34,7 @@ const ChannelDetail = () => {
   if (ChannelIsLoading || videosIsLoading) return <Spinner />;
   if (channelError || videosError) return <div>Something went wrong</div>;
   return (
-    <div className="channelDetail_container">
+    <div className="channelDetail_container container-fluid">
       <div
         className="linear_backgoround"
         style={{

@@ -9,7 +9,7 @@ const VideoSegment = ({ videosData, btnSelected }) => {
       <div className="row">
         {items.map((item, index) => (
           <div
-            className="video_segment__item col-xs-12 col-sm-6 col-lg-4"
+            className="video_segment__item col-xs-12 col-sm-6 col-lg-4 col-xl-3"
             key={index}
           >
             <VideoCard videoDetail={item} />
