@@ -8,20 +8,20 @@ const VideoCard = ({ videoDetail }) => {
   const { id, snippet } = videoDetail;
   return (
     <>
-      <Card className="videoDetail_container">
-        <Link to={`video/${id.videoId}`}>
+      <Card className="videocard_container">
+        <a href={`../video/${id.videoId}`}>
           <CardMedia
             image={snippet?.thumbnails?.high?.url}
             alt={snippet?.description}
             sx={{ width: 358, height: 180 }}
           />
-        </Link>
-        <a href={`video/${id.videoId}`}>
+        </a>
+        <a href={`../video/${id.videoId}`}>
           <CardContent className="video_Detail_title">
             {snippet?.title}
           </CardContent>
         </a>
-        <a href={`channel/${snippet?.channelId}`}>
+        <a href={`../channel/${snippet?.channelId}`}>
           <CardContent className="video_Detail_channelTitle">
             {snippet?.channelTitle}
           </CardContent>

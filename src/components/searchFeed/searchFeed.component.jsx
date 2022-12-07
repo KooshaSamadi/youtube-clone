@@ -8,7 +8,7 @@ import { useGetSearchResultsQuery } from "../../services/youtubeApi";
 import { useEffect } from "react";
 const SearchFeed = () => {
   const { searchTerm } = useParams();
-
+  //console.log(searchTerm);
   const { data, error, isLoading } = useGetSearchResultsQuery(searchTerm);
 
   if (isLoading) return <Spinner />;

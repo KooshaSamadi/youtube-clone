@@ -1,0 +1,32 @@
+.videoDetail_container {
+  .videoDetail_video {
+    .react-player {
+      height: 360px !important;
+    }
+    .videoDetail_video_description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      color: white;
+      h3 {
+        cursor: pointer;
+      }
+      div {
+        margin-right: 1rem;
+        text-align: center;
+        opacity: 0.7;
+      }
+    }
+    .videoDetail_video_channel {
+      margin-top: 1rem;
+      color: red;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
