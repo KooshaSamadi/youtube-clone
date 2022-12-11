@@ -5,6 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+  overflow-x: none !important;
 }
 
 a {
@@ -70,10 +71,7 @@ a {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .copyright {
-    display: none !important;
-  }
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 600px) {

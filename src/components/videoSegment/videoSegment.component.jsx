@@ -5,7 +5,7 @@ const VideoSegment = ({ videosData, btnSelected }) => {
   const { items } = videosData;
 
   return (
-    <div className="video_segment col-10">
+    <div className="video_segment col-sm-12 col-md-9 col-lg-10">
       <div className="row">
         {items.map((item, index) => (
           <div
