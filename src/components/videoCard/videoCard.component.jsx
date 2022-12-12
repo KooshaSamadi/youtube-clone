@@ -14,6 +14,7 @@ const VideoCard = ({ videoDetail }) => {
             image={snippet?.thumbnails?.high?.url}
             alt={snippet?.description}
             sx={{ width: 358, height: 180 }}
+            className="videocard_image"
           />
         </a>
         <a href={`../video/${id.videoId}`}>
