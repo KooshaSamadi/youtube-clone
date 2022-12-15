@@ -17,7 +17,7 @@ const SideBar = ({ btnSelected, setBtnSelected }) => {
           <span>{category.name}</span>
         </button>
       ))}
-      <p className="copyright">Koosha Samadi</p>
+      <p className="copyright">&copy; Koosha Samadi</p>
     </Stack>
   );
 };
